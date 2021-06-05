@@ -1,0 +1,92 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8"/>
+  <title>Сайт з 4 сторінками</title>
+</head>
+
+<style>
+  header {
+   display: block;
+   background: #faf9c6;
+   padding: 4px;
+    display: block;
+  }
+  aside {
+    background: #f0e0f0; 
+    padding: 10px; 
+    width: 200px; 
+    float: right; 
+    display: block;
+    position: sticky;
+    top: 0;
+   }
+  aside1 {
+    background: #f0f0f0; 
+    padding: 10px; 
+    width: 200px; 
+    float: right; 
+    display: block;
+    position: sticky;
+    top: 150px;
+   }
+   article {
+    background: #b3e7e7;
+    padding: 10px;
+    margin-right: 220px;  
+    display: block; 
+   }
+   footer {
+    background: #d38df3; 
+    padding: 10px; 
+    display: block;
+    margin-right: 220px;
+   }
+ </style>
+
+<body>
+  <aside>
+    <h1>Реєстрація</h1>
+    <input type="text" name="name" size=10>
+    <input type="text" name="email" size=10>
+    <input type="button" name="register" value="Зареєструватись" OnClick="alert('Тест реєстрації')">
+            
+  </aside>
+    
+{% block content %}
+{% endblock content%}
+
+    <aside1>
+      <h3>Меню</h3>
+      <p>
+          <a href="/">
+          <img src="1.jpg">
+          <span style="margin-left:5px;">Головна</span;></a>
+      </p>
+      <p>
+        <a href="/photo/">
+        <img src="1.jpg">
+        <span style="margin-left:5px;">Деякі актори з фото</span;></a>
+    </p>
+      <p>
+          <a href="Топ акторів.html">
+          <img src="/1.jpg">
+          <span style="margin-left:5px;">Топ акторів</span></a>
+      </p>
+      <p>
+          <a href="Опис професії актора.html">
+          <img src="/1.jpg">
+          <span style="margin-left:5px;">Опис професії актора</span></a>
+      </p>
+      <p>
+          <a href="Найбагатші актори.html">
+          <img src="/1.jpg">
+          <span style="margin-left:5px;">Найбагатші актори</span></a>
+      </p>
+    </aside1>
+        
+{% block article %}
+{% endblock article%}
+  <footer>Copyright Nesterenko Volodymyr</footer>
+</body>
+</html>

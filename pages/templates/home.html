@@ -1,0 +1,70 @@
+<!-- templates/home.html -->
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8"/>
+  <title>Сайт з 4 сторінками</title>
+</head>
+
+<style>
+  header {
+   display: block;
+   background: #faf9c6;
+   padding: 4px;
+    display: block;
+  }
+  aside {
+    background: #f0e0f0; 
+    padding: 10px; 
+    width: 200px; 
+    float: right; 
+    display: block;
+    position: sticky;
+    top: 0;
+   }
+  aside1 {
+    background: #f0f0f0; 
+    padding: 10px; 
+    width: 200px; 
+    float: right; 
+    display: block;
+    position: sticky;
+    top: 150px;
+   }
+   article {
+    background: #b3e7e7;
+    padding: 10px;
+    margin-right: 220px;  
+    display: block; 
+   }
+   footer {
+    background: #d38df3; 
+    padding: 10px; 
+    display: block;
+    margin-right: 440px;
+   }
+ </style>
+
+<body>
+  
+  {% block content %}
+    <header>
+    <div class="header-bg">
+      <th>
+      <h1>САЙТ ПРО АКТОРІВ</h1>
+      <h3>На цьому сайті, який був створений в рамках виконання другої лабораторної, наведено топ акторів, багато акторів з фото, опис професії актора та найбагатші актори</h3>
+      </th>
+    </div>
+    </header>
+    {% endblock content %}
+    {% block article %}
+          <article>
+            <h2>Головна</h2>
+            <p style="text-indent:20px">Акто́р, акто́рка (актри́са; лат. actor — той, хто діє), також заст. лицеді́й, лицеді́йка — виконавець ролей в драматичних, оперних, балетних, естрадних, циркових виставах та кінофільмах, творець сценічних образів.</p>
+            <p style="text-indent:20px">Стиль, напрям і жанр мистецтва акторів визначаються характером драматургії, нац. особливостями театру, складом глядачів та постановочними принципами. Мистецтво А. завжди набуває типових ознак, характерних для стилю певної історичної епохи.</p>
+          </article>
+          {% endblock article %}
+</body>
+
+
+</html>

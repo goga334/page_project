@@ -1,0 +1,87 @@
+<!-- templates/about.html -->
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8"/>
+  <title>Сайт з 4 сторінками</title>
+</head>
+
+<style>
+  header {
+   display: block;
+   background: #faf9c6;
+   padding: 4px;
+    display: block;
+  }
+  aside {
+    background: #f0e0f0; 
+    padding: 10px; 
+    width: 200px; 
+    float: right; 
+    display: block;
+    position: sticky;
+    top: 0;
+   }
+  aside1 {
+    background: #f0f0f0; 
+    padding: 10px; 
+    width: 200px; 
+    float: right; 
+    display: block;
+    position: sticky;
+    top: 150px;
+   }
+   article {
+    background: #b3e7e7;
+    padding: 10px;
+    margin-right: 220px;  
+    display: block; 
+   }
+   footer {
+    background: #d38df3; 
+    padding: 10px; 
+    display: block;
+    margin-right: 220px;
+   }
+ </style>
+
+<body>
+
+  {% block content %}
+    <header>
+    <div class="header-bg">
+      <th>
+      <h1>САЙТ ПРО АКТОРІВ</h1>
+      <h3>На цьому сайті, який був створений в рамках виконання другої лабораторної, наведено топ акторів, багато акторів з фото, опис професії актора та найбагатші актори</h3>
+      </th>
+    </div>
+    </header>
+    {% endblock content %}
+    {% block article %}
+          <article>
+            <h2>Деякі актори з фото</h2><hr>
+            <img src="Aaron Piper.jpeg">
+            <h4>Aaron Piper</h4><hr>
+            <img src="Chandra Mikles.jpeg">
+            <h4>Chandra Mikles</h4><hr>
+            <img src="Charlie Heaton.jpeg">
+            <h4>Charlie Heaton</h4><hr>
+            <img src="Ester Exposito.jpeg">
+            <h4>Ester Exposito</h4><hr>
+            <img src="Glenn Veis.jpeg">
+            <h4>Glenn Veis</h4><hr>
+            <img src="John Carpenter.jpeg">
+            <h4>John Carpenter</h4><hr>
+            <img src="Matti Pellonpaa.jpeg">
+            <h4>Matti Pellonpaa</h4><hr>
+            <img src="Murrey Freiser.jpeg">
+            <h4>Murrey Freiser</h4><hr>
+            <img src="Seineb Saleh.jpeg">
+            <h4>Seineb Saleh</h4><hr>
+            <img src="Valeria Vegner.jpeg">
+            <h4>Valeria Vegner</h4>
+        </article>
+        
+{% endblock article %}
+</body>
+</html>
