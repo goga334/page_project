@@ -1,49 +1,13 @@
 <!-- templates/home.html -->
 {% extends 'base.html' %}
+{% load static %}
 <!DOCTYPE html>
 <head>
 <meta charset="utf-8"/>
-  <title>Сайт з 4 сторінками</title>
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<title>Сайт з 4 сторінками</title>
 </head>
 
-<style>
-  header {
-   display: block;
-   background: #faf9c6;
-   padding: 4px;
-    display: block;
-  }
-  aside {
-    background: #f0e0f0; 
-    padding: 10px; 
-    width: 200px; 
-    float: right; 
-    display: block;
-    position: sticky;
-    top: 0;
-   }
-  aside1 {
-    background: #f0f0f0; 
-    padding: 10px; 
-    width: 200px; 
-    float: right; 
-    display: block;
-    position: sticky;
-    top: 150px;
-   }
-   article {
-    background: #b3e7e7;
-    padding: 10px;
-    margin-right: 220px;  
-    display: block; 
-   }
-   footer {
-    background: #d38df3; 
-    padding: 10px; 
-    display: block;
-    margin-right: 440px;
-   }
- </style>
 
 <body>
   
